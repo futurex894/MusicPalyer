@@ -24,5 +24,10 @@ namespace MusicPlayer
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            text.Rect =Rect.Parse("0 0 200 30");
+        }
     }
 }

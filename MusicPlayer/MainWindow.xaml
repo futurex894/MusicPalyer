@@ -8,11 +8,42 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <StackPanel>
-            
+
         </StackPanel>
         <Canvas>
-            <Rectangle Width="100" Height="100" Fill="AliceBlue"></Rectangle>
+            <Path Canvas.Right="0" Fill="Blue">
+                <Path.Data>
+                    <RectangleGeometry x:Name="text" Rect="0,0,100,30" RadiusX="10" RadiusY="10" >
+                       
+                    </RectangleGeometry>
+                </Path.Data>
+                <Path.Triggers>
+                    <EventTrigger RoutedEvent="MouseEnter">
+                        <EventTrigger.Actions>
+                            
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                </Path.Triggers>
+                
+            </Path>
+            <Path Canvas.Right="0" Fill="Blue">
+                <Path.Data>
+                    <RectangleGeometry  Rect="0,0,10,30"/>
+                </Path.Data>
+            </Path>
+            <Path Canvas.Right="0" Canvas.Top="40" Fill="Red">
+                <Path.Data>
+                    <RectangleGeometry Rect="0,0,100,30" RadiusX="10" RadiusY="10" />
+                </Path.Data>
+            </Path>
+            <Path Canvas.Right="0" Canvas.Top="40" Fill="red">
+                <Path.Data>
+                    <RectangleGeometry Rect="0,0,10,30"/>
+                </Path.Data>
+                
+            </Path>
         </Canvas>
+        <Button Width="30" x:Name="btn" Height="30" Click="Button_Click"></Button>
 
     </Grid>
 </Window>
