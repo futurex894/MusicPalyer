@@ -4,46 +4,28 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MusicPlayer"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <StackPanel>
 
         </StackPanel>
-        <Canvas>
-            <Path Canvas.Right="0" Fill="Blue">
-                <Path.Data>
-                    <RectangleGeometry x:Name="text" Rect="0,0,100,30" RadiusX="10" RadiusY="10" >
-                       
-                    </RectangleGeometry>
-                </Path.Data>
-                <Path.Triggers>
-                    <EventTrigger RoutedEvent="MouseEnter">
-                        <EventTrigger.Actions>
-                            
-                        </EventTrigger.Actions>
-                    </EventTrigger>
-                </Path.Triggers>
+        <ListBox>
+            <ListBoxItem>
                 
-            </Path>
-            <Path Canvas.Right="0" Fill="Blue">
-                <Path.Data>
-                    <RectangleGeometry  Rect="0,0,10,30"/>
-                </Path.Data>
-            </Path>
-            <Path Canvas.Right="0" Canvas.Top="40" Fill="Red">
-                <Path.Data>
-                    <RectangleGeometry Rect="0,0,100,30" RadiusX="10" RadiusY="10" />
-                </Path.Data>
-            </Path>
-            <Path Canvas.Right="0" Canvas.Top="40" Fill="red">
-                <Path.Data>
-                    <RectangleGeometry Rect="0,0,10,30"/>
-                </Path.Data>
+            </ListBoxItem>
+            <ListBoxItem>
                 
-            </Path>
+            </ListBoxItem>
+        </ListBox>
+        <Canvas x:Name="hello">
+            <Border Canvas.Right="0" Width="17" Height="20" Background="Red" CornerRadius="5 0 0 5"></Border>
+            <Border Canvas.Right="0" Canvas.Top="30" Width="30" Height="20" Background="Red" CornerRadius="5 0 0 5">
+            </Border>
         </Canvas>
-        <Button Width="30" x:Name="btn" Height="30" Click="Button_Click"></Button>
+        <Button Width="30" x:Name="btn" Height="30" Click="Button_Click">
+        </Button>
 
     </Grid>
 </Window>

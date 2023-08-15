@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LoadByo1R6zIPH+yngwFVMcRa2sKDYqX+9ms4uawf24/RcfqIsKNY5V4cwrf8JLTw3o8gHsC9BcZGbtuxDwMog==",
+  "dgSpecHash": "8+npmstu9FEcfl3Evt9J2Hib9skuyn2e2IfT0P+eTHd2O3pMKJwypDeeGUfcZ+wD6q9Az2nCgZo15VCYRKeCcg==",
   "success": true,
   "projectFilePath": "D:\\Code\\MusicPlayer\\MusicPlayer\\MusicPlayer.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\futurex\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+  ],
   "logs": []
 }

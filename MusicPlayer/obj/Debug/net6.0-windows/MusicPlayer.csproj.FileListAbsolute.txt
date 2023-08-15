@@ -19,3 +19,5 @@ D:\Code\MusicPlayer\MusicPlayer\obj\Debug\net6.0-windows\refint\MusicPlayer.dll
 D:\Code\MusicPlayer\MusicPlayer\obj\Debug\net6.0-windows\MusicPlayer.pdb
 D:\Code\MusicPlayer\MusicPlayer\obj\Debug\net6.0-windows\MusicPlayer.genruntimeconfig.cache
 D:\Code\MusicPlayer\MusicPlayer\obj\Debug\net6.0-windows\ref\MusicPlayer.dll
+D:\Code\MusicPlayer\MusicPlayer\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
+D:\Code\MusicPlayer\MusicPlayer\obj\Debug\net6.0-windows\MusicPlayer.csproj.CopyComplete
