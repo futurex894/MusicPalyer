@@ -7,24 +7,35 @@
         xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Storyboard x:Key="ImageRun">
+            <DoubleAnimation From="0" To="360" RepeatBehavior="Forever" Duration="0:0:3"
+                                             Storyboard.TargetName="imageshow"
+                                             Storyboard.TargetProperty="Angle"/>
+        </Storyboard>
+    </Window.Resources>
     <Grid>
         <StackPanel>
 
         </StackPanel>
-        <ListBox>
-            <ListBoxItem>
-                
-            </ListBoxItem>
-            <ListBoxItem>
-                
-            </ListBoxItem>
-        </ListBox>
+        <Image Width="100" Height="100" Source="Assets/RC.jpg"  >
+            <Image.Clip>
+                <EllipseGeometry RadiusX="50" RadiusY="50" Center="50 50"></EllipseGeometry>
+            </Image.Clip>
+            <Image.RenderTransformOrigin>
+                <Point X="0.5" Y="0.5"></Point>
+            </Image.RenderTransformOrigin>
+            <Image.RenderTransform>
+                <RotateTransform x:Name="imageshow"></RotateTransform>
+            </Image.RenderTransform>
+        </Image>
         <Canvas x:Name="hello">
             <Border Canvas.Right="0" Width="17" Height="20" Background="Red" CornerRadius="5 0 0 5"></Border>
             <Border Canvas.Right="0" Canvas.Top="30" Width="30" Height="20" Background="Red" CornerRadius="5 0 0 5">
             </Border>
         </Canvas>
-        <Button Width="30" x:Name="btn" Height="30" Click="Button_Click">
+        <Button Width="30" Height="30" x:Name="btnUpdate" Click="Button_Click">
+            
         </Button>
 
     </Grid>

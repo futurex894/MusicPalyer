@@ -5,7 +5,12 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\RC.jpg" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.39" />
@@ -14,6 +19,10 @@
   <ItemGroup>
     <Folder Include="View\" />
     <Folder Include="Model\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\RC.jpg" />
   </ItemGroup>
 
 </Project>
